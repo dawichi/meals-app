@@ -2,14 +2,14 @@ import React from 'react'
 import { View, FlatList, Text } from 'react-native'
 import ListItem from '../components/ListItem'
 import useFetch from '../hooks/useFetch'
-import generalStyles from '../styles/generalStyles'
+import generalStyles from '../styles/general'
 
-const Meals = ({ navigation }) => {
+export default ({ navigation }) => {
 
 	const { loading, data: meals } = useFetch('https://serverless-dawichi.vercel.app/api/meals')
 
 	return (
-		<View style={generalStyles.constainer}>
+		<View style={generalStyles.containerList}>
 			{loading ? <Text>Loading....</Text> :
 			<FlatList
 				style={generalStyles.list}
@@ -25,9 +25,3 @@ const Meals = ({ navigation }) => {
 		</View>
 	)
 }
-
-Meals.navigationOptions = ({
-	title: 'Meals available',
-})
-
-export default Meals
