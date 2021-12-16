@@ -8,9 +8,9 @@ Basic features:
 * Allows to create new orders selecting a meal
 
 
-<img src="./assets/1.jpg" width="30%" /><img src="./assets/2.jpg" width="30%" />
+<img src="./frontend/assets/1.jpg" width="30%" /><img src="./frontend/assets/2.jpg" width="30%" />
 
-<img src="./assets/3.jpg" width="30%" /><img src="./assets/4.jpg" width="30%" />
+<img src="./frontend/assets/3.jpg" width="30%" /><img src="./frontend/assets/4.jpg" width="30%" />
 
 
 ## backend/ : serverless API
